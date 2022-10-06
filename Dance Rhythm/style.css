@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/bggif.gif);
+    background-position: right;
+    background-size: contain;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 12%;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    position: fixed;
+    z-index: 2;
+    width: 80%;
+    height: 5%;
+}
+nav img{
+    width: 120px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fee381;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li:hover{
+    background: #fee381;
+    color: black;
+}
+.nav-links ul li a:hover{
+    color: black;
+}
+   
+.text-box{
+    width: 90%;
+    color: #fee381;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 1;
+}
+.text-box h2{
+    font-size: 50px;
+}
+.text-box h3{
+    font-size: 35px;
+}
+@media(max-width:700px){
+    .nav-links ul li{
+        padding: 8px 10px;
+    }
+    .nav-links{
+        text-align: right;
+    }
+    .nav-links ul li a{
+        font-size: 15px;
+    }
+    .text-box{
+        width: 60%;
+    }
+    .text-box h2{
+        font-size: 35px;
+    }
+    .text-box h3{
+        font-size: 20px;
+    }
+    nav img{
+        width: 60px;
+    }
+    .header{
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media(max-width:900px){
+    .nav-links ul li{
+        padding: 8px 10px;
+    }
+    nav img{
+        max-width: 80px;
+    }
+}
+
+
+/*---------------About Us----------------*/
+
+.About-us{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+}
+.About-us h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.About-us p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutus-col1{
+    display: flex;
+    align-items: center;
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.aboutus-col1 img{
+    max-width: 100%;
+}
+.aboutus-col1 h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.aboutus-col1:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+@media(max-width:900px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+/*---------------About Ananya-----------------*/
+
+.about1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:10px;
+}
+.about1 h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.about1 p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row-1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.about1-col{
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.about1-col img{
+    max-width: 100%;
+}
+@media(max-width:700px){
+    .row-1{
+        flex-direction: column;
+    }
+}
+@media(max-width:900px){
+    .row-1{
+        flex-direction: column;
+    }
+}
+
+
+/*------------------Ananya Videos---------------*/
+
+.abt-vid{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+}
+.abt-vid h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.abt-vid p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row-11{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.abt-vid{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.about1-col img{
+    max-width: 100%;
+}
+@media(max-width:700px){
+    .row-11{
+        flex-direction: column;
+    }
+}
+@media(max-width:900px){
+    .row-11{
+        flex-direction: column;
+    }
+}
+@media(max-width:1200px){
+    .row-11{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*------------------About Sahana---------------*/
+
+.about2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:10px;
+}
+.about2 h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.about2 p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row-2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.about2-col{
+    display: flex;
+    align-items: center;
+    flex-basis: 40%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.about2-col img{
+    max-width: 100%;
+}
+@media(max-width:700px){
+    .row-2{
+        flex-direction: column;
+    }
+}
+@media(max-width:900px){
+    .row-2{
+        flex-direction: column;
+    }
+}
+
+/*----------Our Choreographs---------------*/
+
+.chor{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:10px;
+}
+.chor h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.row-4{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.vid-01{
+    flex-basis: 40%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+@media(max-width:700px){
+    .row-4{
+        flex-direction: column;
+    }
+}
+@media(max-width:900px){
+    .row-4{
+        flex-direction: column;
+    }
+}
+
+/*---------Contact Us---------*/
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:10px;
+}
+.chor h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.row-5{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-1{
+    list-style-type: none;
+    flex-basis:50%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px; 
+    box-sizing: border-box;
+}
+.footer-1 input{
+    height: 50px;
+    width: 70%;
+}
+.footer-1 textarea{
+    height: 70px;
+    width: 300px;
+}
+@media(max-width:700px){
+    .row-5{
+        flex-direction: column;
+    }
+}
+@media(max-width:900px){
+    .row-5{
+        flex-direction: column;
+    }
+}
